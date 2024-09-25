@@ -18,4 +18,6 @@ public interface NewsUserService {
      * @return  找到返回NewsUser对象，找不到返回null
      */
     NewsUser findByUsername(String username);
+
+    Integer registUser(NewsUser registUser);
 }
