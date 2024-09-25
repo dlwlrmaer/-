@@ -1,8 +1,10 @@
 package com.atguigu.headline.controller;
 import com.atguigu.headline.common.Result;
+import com.atguigu.headline.common.ResultCodeEnum;
 import com.atguigu.headline.pojo.NewsUser;
 import com.atguigu.headline.service.NewsUserService;
 import com.atguigu.headline.service.impl.NewsUserServiceImpl;
+import com.atguigu.headline.util.JwtHelper;
 import com.atguigu.headline.util.MD5Util;
 import com.atguigu.headline.util.WebUtil;
 import jakarta.servlet.ServletException;
@@ -11,6 +13,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 @WebServlet("/user/*")
 public class NewsUserController extends BaseController{
@@ -35,11 +39,20 @@ public class NewsUserController extends BaseController{
         Result result = null;
         if (null != loginUser){
             if(MD5Util.encrypt(paramUser.getUserPwd()).equalsIgnoreCase(loginUser.getUserPwd())){
-                result = Result.ok();
+                Integer uid = loginUser.getUid();
+                String token = JwtHelper.createToken(uid.longValue());
+                Map data = new HashMap();
+                data.put("token",token);
+                result = Result.ok(data);
+            }else{
+                result = Result.build(null, ResultCodeEnum.PASSWORD_ERROR);
             }
             
+        }else {
+            result = Result.build(null,ResultCodeEnum.USERNAME_ERROR);
         }
-        //  向客户端响应登录验证信息
 
+        //  向客户端响应登录验证信息
+        WebUtil.writeJson(resp,result);
     }
 }
