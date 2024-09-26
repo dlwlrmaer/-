@@ -20,4 +20,6 @@ public interface NewsUserService {
     NewsUser findByUsername(String username);
 
     Integer registUser(NewsUser registUser);
+
+    NewsUser findByUid(Integer uid);
 }

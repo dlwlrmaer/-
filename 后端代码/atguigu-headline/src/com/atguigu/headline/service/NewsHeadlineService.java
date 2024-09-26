@@ -1,5 +1,7 @@
 package com.atguigu.headline.service;
 
+import com.atguigu.headline.pojo.NewsHeadline;
+import com.atguigu.headline.pojo.vo.HeadlineDetailVo;
 import com.atguigu.headline.pojo.vo.HeadlineQueryVo;
 
 import java.util.Map;
@@ -14,5 +16,16 @@ import java.util.Map;
  * @Version 1.0
  */
 public interface NewsHeadlineService {
-    Map findPage(HeadlineQueryVo headlineQueryVo);
+
+    Map<String,Object> findPage(HeadlineQueryVo headlineQueryVo);
+
+    HeadlineDetailVo findHeadlineDetail(Integer hid);
+
+    int addNewsHeadline(NewsHeadline newsHeadline);
+
+    NewsHeadline findHeadlineByHid(Integer hid);
+
+    int updateNewsHeadline(NewsHeadline newsHeadline);
+
+    int removeByHid(Integer hid);
 }

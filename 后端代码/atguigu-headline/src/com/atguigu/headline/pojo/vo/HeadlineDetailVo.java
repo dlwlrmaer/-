@@ -20,3 +20,4 @@ public class HeadlineDetailVo implements Serializable {
     private Integer publisher;
     private String author;
 }
+

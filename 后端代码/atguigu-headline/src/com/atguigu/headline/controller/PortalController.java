@@ -54,4 +54,6 @@ public class PortalController extends BaseController{
 
         WebUtil.writeJson(resp,Result.ok(newsTypeList));
     }
+
+
 }

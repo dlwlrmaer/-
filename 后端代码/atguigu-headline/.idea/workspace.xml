@@ -9,16 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52e81f31-e732-4f30-9f26-6a565dfbdfcb" name="更改" comment="">
+    <list default="true" id="52e81f31-e732-4f30-9f26-6a565dfbdfcb" name="更改" comment="更改">
+      <change afterPath="$PROJECT_DIR$/src/com/atguigu/headline/filters/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atguigu-headline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atguigu-headline.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsHeadlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsHeadlineController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/PortalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsHeadLineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsHeadLineDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsHeadlineDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsHeadlineDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsUserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineQueryVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsHeadlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsHeadlineService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsHeadlineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsHeadlineServiceImpl.java" afterDir="false" />
@@ -87,7 +91,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -118,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 10.1.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.28" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.1.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="atguigu-headline:Web exploded">
@@ -222,11 +226,23 @@
       <workItem from="1727235578979" duration="832000" />
       <workItem from="1727252237715" duration="2327000" />
       <workItem from="1727269484067" duration="5019000" />
+      <workItem from="1727332857222" duration="9459000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
