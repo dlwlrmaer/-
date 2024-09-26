@@ -1,6 +1,7 @@
 package com.atguigu.headline.controller;
 import com.atguigu.headline.common.Result;
 import com.atguigu.headline.pojo.NewsType;
+import com.atguigu.headline.pojo.vo.HeadlineDetailVo;
 import com.atguigu.headline.pojo.vo.HeadlineQueryVo;
 import com.atguigu.headline.service.NewsHeadlineService;
 import com.atguigu.headline.service.NewsTypeService;
@@ -53,6 +54,24 @@ public class PortalController extends BaseController{
         List<NewsType> newsTypeList = typeService.findAll();
 
         WebUtil.writeJson(resp,Result.ok(newsTypeList));
+    }
+
+    /**
+     * 查询单个新闻详情
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
+    protected void showHeadlineDetail(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Integer hid = Integer.parseInt(req.getParameter("hid"));
+
+        HeadlineDetailVo headlineDetailVo = headlineService.findHeadlineDetail(hid);
+
+        Map<String,Object> data = new HashMap<>();
+        data.put("headline",headlineDetailVo);
+
+        WebUtil.writeJson(resp,Result.ok(data));
     }
 
 

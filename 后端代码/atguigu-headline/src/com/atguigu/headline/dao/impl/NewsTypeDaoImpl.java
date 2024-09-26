@@ -9,7 +9,7 @@ public class NewsTypeDaoImpl extends BaseDao implements NewsTypeDao{
 
     @Override
     public List<NewsType> findAll() {
-        String sql = "select tid,tname from news_type";
-        return baseQuery(NewsType.class,sql);
+        String sql ="select tid,tname from news_type";
+        return  baseQuery(NewsType.class, sql);
     }
 }

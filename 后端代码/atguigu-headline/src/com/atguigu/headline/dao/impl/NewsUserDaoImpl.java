@@ -9,19 +9,13 @@ public class NewsUserDaoImpl extends BaseDao implements NewsUserDao{
 
     @Override
     public NewsUser findByUsername(String username) {
-        String sql = """
-                select
-                uid,
-                username,
-                user_pwd userPwd,
-                nick_name nickName
-                from
-                news_user
-                where username = ?
-                """;
+        // 准备SQL
+        String sql ="select uid,username,user_pwd userPwd ,nick_name nickName from news_user where username = ?";
+        // 调用BaseDao公共查询方法
         List<NewsUser> newsUserList = baseQuery(NewsUser.class, sql, username);
-        if(null != newsUserList && newsUserList.size() > 0) {
-            return newsUserList.get(0);
+        // 如果找到,返回集合中的第一个数据(其实就一个)
+        if (null != newsUserList && newsUserList.size()>0){
+            return  newsUserList.get(0);
         }
         return null;
     }
@@ -29,11 +23,11 @@ public class NewsUserDaoImpl extends BaseDao implements NewsUserDao{
     @Override
     public NewsUser findByUid(Integer uid) {
         String sql = """
-                select 
+                select
                     uid,
                     username,
                     user_pwd userPwd,
-                    nick_name nickName,
+                    nick_name nickName
                 from
                     news_user
                 where
@@ -47,16 +41,8 @@ public class NewsUserDaoImpl extends BaseDao implements NewsUserDao{
     }
 
     @Override
-    public Integer insertNewsUser(NewsUser registUser) {
-        String sql = """
-                insert
-                
-                into
-                    news_user
-                values
-                    (DEFAULT,?,?,?)
-                """;
-
-        return baseUpdate(sql,registUser.getUsername(),registUser.getUserPwd(),registUser.getNickName());
+    public Integer insertNewsUser(NewsUser newsUser) {
+        String sql ="insert into news_user values(DEFAULT,?,?,?)";
+        return baseUpdate(sql,newsUser.getUsername(),newsUser.getUserPwd(),newsUser.getNickName());
     }
 }

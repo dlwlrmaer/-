@@ -10,23 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52e81f31-e732-4f30-9f26-6a565dfbdfcb" name="更改" comment="更改">
-      <change afterPath="$PROJECT_DIR$/src/com/atguigu/headline/filters/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atguigu-headline.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atguigu-headline.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsHeadlineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsHeadlineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/NewsUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/controller/PortalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/controller/PortalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsHeadLineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsHeadLineDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/NewsUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsHeadlineDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsHeadlineDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsTypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsTypeDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/dao/impl/NewsUserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineDetailVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/pojo/vo/HeadlineQueryVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsHeadlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsHeadlineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/NewsUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsHeadlineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsHeadlineServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/atguigu/headline/service/impl/NewsUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +83,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -132,7 +124,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="5e735c10-5922-4169-b8dc-0045fc0df21c" />
+        <option name="BASE_DIRECTORY_NAME" value="88a38c87-efdd-43f3-b7ed-1a9bf27b7157" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -140,7 +132,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57954" />
+        <option name="DEBUG_PORT" value="54191" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -227,6 +219,7 @@
       <workItem from="1727252237715" duration="2327000" />
       <workItem from="1727269484067" duration="5019000" />
       <workItem from="1727332857222" duration="9459000" />
+      <workItem from="1727366643215" duration="3764000" />
     </task>
     <servers />
   </component>

@@ -40,7 +40,7 @@ public class NewsUserController extends BaseController{
 
         Result result = null;
 
-        if (null != usedUser){
+        if (null == usedUser){
             userService.registUser(registUser);
             result = Result.ok(null);
         }else {
@@ -97,7 +97,7 @@ public class NewsUserController extends BaseController{
             }else{
                 result = Result.build(null, ResultCodeEnum.PASSWORD_ERROR);
             }
-            
+
         }else {
             result = Result.build(null,ResultCodeEnum.USERNAME_ERROR);
         }
@@ -129,23 +129,6 @@ public class NewsUserController extends BaseController{
         WebUtil.writeJson(resp,result);
     }
 
-    /**
-     * 查询单个新闻详情
-     * @param req
-     * @param resp
-     * @throws ServletException
-     * @throws IOException
-     */
-    protected void showHeadlineDetail(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Integer hid = Integer.parseInt(req.getParameter("hid"));
-
-        HeadlineDetailVo headlineDetailVo = headlineService.findHeadlineDetail(hid);
-
-        Map<String,Object> data = new HashMap<>();
-        data.put("headline",headlineDetailVo);
-
-        WebUtil.writeJson(resp,Result.ok(data));
-    }
 
     /**
      * 通过token检验用户登录是否过期
